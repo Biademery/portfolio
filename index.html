@@ -24,13 +24,13 @@
         </a>
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <a href="#">Home</a>
           </li>
           <li>
-            <a href="#sobre">Sobre</a>
+            <a href="#about">Sobre</a>
           </li>
           <li>
-            <a href="#">Currículo</a>
+            <a href="./assets/CV.pdf" target="_blank">Currículo</a>
           </li>
           <li>
             <a href="#contato">Contato</a>
@@ -43,46 +43,108 @@
         <div class="intro">
           <h2>Olá! Eu sou</h2>
           <h1>Bia D'Emery</h1>
-          <p>Web Developer</p>
+          <p>Full Stack Developer</p>
           <div class="icons">
             <img src="./assets/icons/linkedinIcon.png" alt="LinkedIn" />
             <img src="./assets/icons/githubnIcon.png" alt="Github" />
           </div>
+          <button class="button">CV</button>
         </div>
         <div class="border">
           <img src="./assets/images/BD.png" alt="Bia" />
         </div>
       </section>
-      <section id="sobre">
-        <div class="sobreMim">
+      <section id="about">
+        <div class="sobre">
           <h1>Sobre Mim</h1>
-          <p class="sobreMim p">
+          <p class="sobre p">
             Estudante, atualmente cursando Sistemas para Internet na faculdade UNIESP Centro
             Universitário. Em busca da primeira oportunidade para desenvolver competências na área
             de desenvolvimento web.
           </p>
+          <div class="sobre formacao">
+            <h2>Formação</h2>
+            <h3>UNIESP Centro Universitário</h3>
+            <p class="formacao curso">Sistemas para internet</p>
+            <p class="formacao data">Ago 2022 - Ago 2024</p>
+            <p class="formacao descricao">
+              Desenvolvimento de sistemas corporativos, aplicativos web e mobile, sistemas para
+              comércio eletrônico, além de portais para internet e intranet.
+            </p>
+          </div>
+          <div class="sobre skill">
+            <h2>Skills</h3>
+            <div>
+              <ul>
+                <li>JavaScript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Git</li>
+                <li>Python3</li>
+                <li>Linux</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="formacao">
-          <h2>Formação</h2>
-          <h3>UNIESP Centro Universitário</h3>
-          <p class="formacao curso">Sistemas para internet</p>
-          <p class="formacao data">Ago 2022 - Ago 2024</p>
-          <p class="formacao descricao">
-            Desenvolvimento de sistemas corporativos, aplicativos web e mobile, sistemas para
-            comércio eletrônico, além de portais para internet e intranet.
-          </p>
+        <div class="sobre projetos">
+          <h2>Projetos</h2>
+          <div class="grid">
+            <div>
+              <div>
+                <a href="https://pythagoras-theorem-web.vercel.app/" target="_blank">
+                  <img src="./assets/images/pythagorasTheorem.png" alt="Teorema de pitágoras">
+                </a>
+                <h3>Teorema de Pitágoras</h3>
+                <p>Tecnologias utilizadas: </p>
+                <p>HTML, CSS, JavaScript, Python e Django</p>
+              </div>
+              <div>
+                <img src="./assets/images/countdown.png" alt="countdown">
+                <h3>Countdown</h3>
+                <p>Tecnologias utilizadas: </p>
+                <p>HTML, CSS e JavaScript</p>
+              </div>
+            </div>
+            <div>
+              <a href="https://quiz-two-hazel.vercel.app/" target="_blank">
+                <img src="./assets/images/quizFriends.png" alt="Quiz friends">
+              </a>
+              <h3>Quiz de Friends</h3>
+              <p>Tecnologias utilizadas: </p>
+              <p>HTML, CSS e JavaScript</p>
+            </div>
+          </div>
         </div>
       </section>
-      <h3>Skills</h3>
-      <h3>Certificados</h3>
-      <h3>Projetos</h3>
       <section id="contato">
-        <h3></h3>
+        <div>
+          <ul>
+            <li>
+              <img src="./assets/icons/mailIcon.png" alt="Email">
+              <p>Email</p>
+              <p>Biademery@gmail.com</p>
+            </li>
+            <li>
+              <img class="localizacao" src="./assets/icons/pinIcon.png" alt="Localização">
+              <p>Localização</p>
+              <p>João Pessoa - PB, Brasil</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer>
-      <div>.</div>
-      <img src="./assets/images/BD.png" alt="" />
+      <div>
+        <a href="#">
+          <img class="logo" src="./assets/images/logo.png" alt="Logo">
+        </a>
+        <div>
+          <img src="./assets/icons/linkedinIcon.png" alt="LinkedIn">
+          <img src="./assets/icons/githubnIcon.png" alt="Github">
+        </div>
+        <p>Copyright © 2022</p>
+      </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
