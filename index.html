@@ -18,7 +18,7 @@
   </head>
   <body>
     <header>
-      <nav class="nav">
+      <nav class="navbar">
         <a href="#">
           <img src="./assets/images/logo.png" class="logo" alt="logo">
         </a>
@@ -29,19 +29,27 @@
           <span class="line"></span>
         </div>
 
-        <div class="nav__link hide">
-          <a href="#">Home</a>
-          <a href="#">Sobre</a>
-          <a href="./assets/CV.pdf" target="_blank">Currículo</a>
-          <a href="#contato">Contato</a>
-        </div>
+        <ul class="nav__link hide">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#about">Sobre</a>
+          </li>
+          <li>
+            <a href="./assets/CV.pdf" target="_blank">Currículo</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
       <button id="myBtn" onclick="topFunction()">
         <img src="./assets/icons/topIcon.png" alt="">
       </button>
-      <section id="home" class="casa">
+      <section id="home">
         <div class="intro">
           <h2>Olá! Eu sou</h2>
           <h1>Bia D'Emery</h1>
@@ -54,7 +62,9 @@
               <img src="./assets/icons/githubnIcon.png" alt="Github" />
             </a>
           </div>
-          <button id="CV" class="button" onclick="openCV()">CV</button>
+          <button id="CV" class="button">
+            <a href="./assets/CV.pdf" target="_blank">CV</a>
+          </button>
         </div>
         <div class="border">
           <img src="./assets/images/BD.png" alt="Bia" />
@@ -94,6 +104,7 @@
         </div>
         <div class="sobre projetos">
           <h2>Projetos</h2>
+          <p>Screenshots de alguns projetos meus</p>
           <div class="grid">
             <div>
               <div>
@@ -101,14 +112,10 @@
                   <img src="./assets/images/pythagorasTheorem.png" alt="Teorema de pitágoras">
                 </a>
                 <h3>Teorema de Pitágoras</h3>
-                <p>Tecnologias utilizadas: </p>
-                <p>HTML, CSS, JavaScript, Python e Django</p>
               </div>
               <div>
                 <img src="./assets/images/countdown.png" alt="countdown">
                 <h3>Countdown</h3>
-                <p>Tecnologias utilizadas: </p>
-                <p>HTML, CSS e JavaScript</p>
               </div>
             </div>
             <div>
@@ -116,8 +123,6 @@
                 <img src="./assets/images/quizFriends.png" alt="Quiz friends">
               </a>
               <h3>Quiz de Friends</h3>
-              <p>Tecnologias utilizadas: </p>
-              <p>HTML, CSS e JavaScript</p>
             </div>
           </div>
         </div>
@@ -153,7 +158,12 @@
             <img src="./assets/icons/githubLight.png" alt="Github" />
           </a>
         </div>
-        <p>Copyright © 2022</p>
+        <p id="date">
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
       </div>
     </footer>
     <script src="./script.js"></script>
