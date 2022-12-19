@@ -2,6 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: 0;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #cfc4b9; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #836d58; 
 }
 
 body {
@@ -15,31 +28,71 @@ a {
   color: #cfc4b9;
 }
 
-header nav {
-  display: grid;
-  grid-template-columns: 50% 50%;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #1a110e;
-  overflow: hidden;
   position: fixed;
-  top: 0;
   width: 100%;
 }
 
-header nav img {
-  width: 60px;
+.logo {
+  width: 80px;
 }
 
-header nav ul {
-  display: flex;
-  justify-content: space-evenly;  
-  list-style: none;
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
 }
 
-header nav ul li {
-  margin: auto;
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #cfc4b9;
 }
 
-#home {
+.nav__link {
+  position: fixed;
+  width: 100%;
+  top: 5rem;
+  background-color: #1a110e;
+}
+
+.nav__link a {
+  display: block;
+  text-align: center;
+  background-color: #1a110e;
+  color: #cfc4b9;
+  padding: 10px 0;
+}
+
+.nav__link a:hover {
+  color: #836d58;
+}
+
+.hide {
+  display: none;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #836d58;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 50%;
+} 
+
+.casa {
   display: grid;
   grid-template-columns: 50% 50%;
   height: 100vh;
@@ -53,8 +106,8 @@ header nav ul li {
   font-size: 70px;
 }
 
-.icons {
-  margin-top: 20px;
+.intro p {
+  margin-bottom: 20px;
 }
 
 .icons img{
@@ -75,14 +128,14 @@ header nav ul li {
 }
 
 .button:hover {
-  background-color: #cfc4b9;
+  background-color: #836d58;
   color: #1a110e;
   cursor: pointer;
 }
 
 .border {
   margin: auto;
-  background-image: linear-gradient(90deg, #1a110e 0%, #cfc4b9 100%);
+  background-image: linear-gradient(90deg, #1a110e 0%, #836d58 100%);
   border-radius: 50%;
   box-shadow: rgba(20, 13, 13, 0.5) 0px 15px 30px 0px;
   width: 300px;
@@ -95,11 +148,13 @@ header nav ul li {
   border-radius: 50%;
 }
 
-#about {
+#about,
+#contato {
   padding: 0 10%;
 }
 
-.sobre h1 {
+.sobre h1,
+#contato h1 {
   font-size: 40px;
 }
 
@@ -158,6 +213,10 @@ header nav ul li {
   width: 100%;
   margin-top: 30px;
   border-radius: 5px;
+}
+
+.projetos img:hover {
+  opacity: 0.9;
 }
 
 #contato {

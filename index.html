@@ -18,37 +18,43 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav">
         <a href="#">
-          <img src="./assets/images/logo.png" alt="Logo" />
+          <img src="./assets/images/logo.png" class="logo" alt="logo">
         </a>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#about">Sobre</a>
-          </li>
-          <li>
-            <a href="./assets/CV.pdf" target="_blank">Currículo</a>
-          </li>
-          <li>
-            <a href="#contato">Contato</a>
-          </li>
-        </ul>
+
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+
+        <div class="nav__link hide">
+          <a href="#">Home</a>
+          <a href="#">Sobre</a>
+          <a href="./assets/CV.pdf" target="_blank">Currículo</a>
+          <a href="#contato">Contato</a>
+        </div>
       </nav>
     </header>
     <main>
-      <section id="home">
+      <button id="myBtn" onclick="topFunction()">
+        <img src="./assets/icons/topIcon.png" alt="">
+      </button>
+      <section id="home" class="casa">
         <div class="intro">
           <h2>Olá! Eu sou</h2>
           <h1>Bia D'Emery</h1>
           <p>Full Stack Developer</p>
           <div class="icons">
-            <img src="./assets/icons/linkedinIcon.png" alt="LinkedIn" />
-            <img src="./assets/icons/githubnIcon.png" alt="Github" />
+            <a href="https://www.linkedin.com/in/biademery" target="_blank">
+              <img src="./assets/icons/linkedinIcon.png" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/Biademery" target="_blank">
+              <img src="./assets/icons/githubnIcon.png" alt="Github" />
+            </a>
           </div>
-          <button class="button">CV</button>
+          <button id="CV" class="button" onclick="openCV()">CV</button>
         </div>
         <div class="border">
           <img src="./assets/images/BD.png" alt="Bia" />
@@ -118,6 +124,7 @@
       </section>
       <section id="contato">
         <div>
+          <h1>Contato</h1>
           <ul>
             <li>
               <img src="./assets/icons/mail.png" alt="Email">
@@ -138,9 +145,13 @@
         <a href="#">
           <img class="logo" src="./assets/images/logo.png" alt="Logo">
         </a>
-        <div>
-          <img src="./assets/icons/linkedinLight.png" alt="LinkedIn">
-          <img src="./assets/icons/githubLight.png" alt="Github">
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/biademery" target="_blank">
+            <img src="./assets/icons/linkedinLight.png" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/Biademery" target="_blank">
+            <img src="./assets/icons/githubLight.png" alt="Github" />
+          </a>
         </div>
         <p>Copyright © 2022</p>
       </div>
