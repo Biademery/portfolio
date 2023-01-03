@@ -35,6 +35,7 @@ a {
   background-color: #1a110e;
   position: fixed;
   width: 100%;
+  transition: .15s ease-in;
 }
 
 .logo {
@@ -206,7 +207,7 @@ a {
 }
 
 .projetos p {
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 .projetos img {
