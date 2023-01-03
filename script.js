@@ -19,11 +19,11 @@ navLink.addEventListener('click', () => {
 window.onscroll = function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     myBtn.style.display = 'block';
-    navbar.style.height = '60px';
+    navbar.style.height = '10%';
     navLink.style.top = '50px';
   } else {
     myBtn.style.display = 'none';
-    navbar.style.height = '100px';
+    navbar.style.height = '14%';
     navLink.style.top = '80px';
   }
 };
