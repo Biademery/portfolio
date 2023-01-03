@@ -35,7 +35,7 @@ a {
   background-color: #1a110e;
   position: fixed;
   width: 100%;
-  height: 120px;
+  height: 100px;
 }
 
 .logo {
@@ -74,10 +74,6 @@ a {
   color: #836d58;
 }
 
-.hide {
-  display: none;
-}
-
 #myBtn {
   display: none;
   position: fixed;
@@ -112,7 +108,7 @@ a {
 }
 
 .icons img{
-  width: 60px;
+  max-width: 60px;
 }
 
 .button {
