@@ -10,7 +10,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #cfc4b9; 
+  background: #d6d6d6; 
 }
 
 ::-webkit-scrollbar-thumb {
@@ -18,14 +18,14 @@
 }
 
 body {
-  background-color: #cfc4b9;
+  background-color: #d6d6d6;
   color: #1a110e;
   font-family: 'Roboto', 'sans-serif';
 }
 
 a {
   text-decoration: none;
-  color: #cfc4b9;
+  color: #d6d6d6;
 }
 
 .navbar {
@@ -51,7 +51,7 @@ a {
   width: 30px;
   height: 3px;
   margin-bottom: 6px;
-  background-color: #cfc4b9;
+  background-color: #d6d6d6;
 }
 
 .nav__link {
@@ -65,7 +65,7 @@ a {
   display: block;
   text-align: center;
   background-color: #1a110e;
-  color: #cfc4b9;
+  color: #d6d6d6;
   padding: 1% 0;
 }
 
@@ -112,7 +112,7 @@ a {
 
 .button {
   background-color: #1a110e;
-  color: #cfc4b9;
+  color: #d6d6d6;
   box-shadow: rgba(20, 13, 13, 0.5) 0px 15px 30px 0px;
   border: none;
   border-radius: 5px;
@@ -241,7 +241,7 @@ a {
   width: 200px;
   height: 120px;
   background-color: #1a110e;
-  color: #cfc4b9;
+  color: #d6d6d6;
   border-radius: 10px;
   box-shadow: rgba(20, 13, 13, 0.5) 0px 15px 30px 0px;
   margin-top: 20px;
@@ -261,7 +261,7 @@ a {
 
 footer {
   background-color: #1a110e;
-  color: #cfc4b9;
+  color: #d6d6d6;
   margin-top: 80px;
   text-align: center;
 }
