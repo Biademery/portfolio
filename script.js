@@ -1,9 +1,15 @@
 const hamburger = document.querySelector('.hamburger');
 const navLink = document.querySelector('.nav__link');
+const navbar = document.querySelector('.navbar');
 const myBtn = document.querySelector('#myBtn');
+const date = document.querySelector('#date');
 
 hamburger.addEventListener('click', () => {
-  navLink.style.display = 'block';
+  if (navLink.style.display === 'none') {
+    navLink.style.display = 'block';
+  } else {
+    navLink.style.display = 'none';
+  }
 });
 
 navLink.addEventListener('click', () => {
@@ -13,8 +19,12 @@ navLink.addEventListener('click', () => {
 window.onscroll = function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     myBtn.style.display = 'block';
+    navbar.style.height = '60px';
+    navLink.style.top = '50px';
   } else {
     myBtn.style.display = 'none';
+    navbar.style.height = '100px';
+    navLink.style.top = '80px';
   }
 };
 
@@ -24,7 +34,5 @@ function topFunction() {
 }
 
 myBtn.addEventListener('click', topFunction);
-
-const date = document.querySelector('#date');
 
 date.textContent = `Copyright © ${new Date().getFullYear()}`;
