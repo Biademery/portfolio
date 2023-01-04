@@ -1,4 +1,4 @@
-<h1 align="center"> Portfolio</h1>
+<h1 align="center"> Portfólio</h1>
 
 <p align="center">
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -8,12 +8,12 @@
 <br>
 
 <p align="center">
-  <a href=""></a>
+  <a href="https://portfolio-biademery.vercel.app/"></a>
 </p>
 
 ## 💻 Projeto
 
-O projeto é um site com minhas habilidades, formação e currículo. Um portfolio.
+O projeto é um site com minhas habilidades, formação e currículo. Um portfólio.
 
 ## 🚀 Tecnologias
 
