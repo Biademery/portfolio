@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="icon" href="./assets/images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Bia D'Emery Portfólio & CV</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#">
+          <img src="./assets/images/logo.png" class="logo" alt="logo">
+        </a>
+
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+
+        <ul class="nav__link">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#about">Sobre</a>
+          </li>
+          <li>
+            <a href="./assets/CV.pdf" target="_blank">Currículo</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <button id="myBtn">
+        <img src="./assets/icons/topIcon.png" alt="">
+      </button>
+      <section id="home">
+        <div class="intro">
+          <h2>Olá! Eu sou</h2>
+          <h1>Bia D'Emery</h1>
+          <p>Full Stack Developer</p>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/biademery" target="_blank">
+              <img src="./assets/icons/linkedinIcon.png" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/Biademery" target="_blank">
+              <img src="./assets/icons/githubnIcon.png" alt="Github" />
+            </a>
+          </div>
+          <button id="CV" class="button">
+            <a href="./assets/CV.pdf" target="_blank">CV</a>
+          </button>
+        </div>
+        <div class="border">
+          <img src="./assets/images/BD.png" alt="Bia" />
+        </div>
+      </section>
+      <section id="about">
+        <div class="sobre">
+          <h1>Sobre Mim</h1>
+          <p class="sobre p">
+            Estudante, atualmente cursando Sistemas para Internet na faculdade UNIESP Centro
+            Universitário. Em busca da primeira oportunidade para desenvolver competências na área
+            de desenvolvimento web.
+          </p>
+          <div class="sobre formacao">
+            <h2>Formação</h2>
+            <h3>UNIESP Centro Universitário</h3>
+            <p class="formacao curso">Sistemas para internet</p>
+            <p class="formacao data">Ago 2022 - Ago 2024</p>
+            <p class="formacao descricao">
+              Desenvolvimento de sistemas corporativos, aplicativos web e mobile, sistemas para
+              comércio eletrônico, além de portais para internet e intranet.
+            </p>
+          </div>
+          <div class="sobre skill">
+            <h2>Skills</h3>
+            <div>
+              <ul>
+                <li>JavaScript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Git</li>
+                <li>Python3</li>
+                <li>Linux</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="sobre projetos">
+          <h2>Projetos</h2>
+          <p>Screenshots de alguns projetos meus</p>
+          <div class="grid">
+            <div>
+              <div>
+                <a href="https://pythagoras-theorem-web.vercel.app/" target="_blank">
+                  <img src="./assets/images/pythagorasTheorem.png" alt="Teorema de pitágoras">
+                </a>
+                <h3>Teorema de Pitágoras</h3>
+              </div>
+              <div>
+                <img src="./assets/images/countdown.png" alt="countdown">
+                <h3>Countdown</h3>
+              </div>
+            </div>
+            <div>
+              <a href="https://quiz-two-hazel.vercel.app/" target="_blank">
+                <img src="./assets/images/quizFriends.png" alt="Quiz friends">
+              </a>
+              <h3>Quiz de Friends</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contato">
+        <div>
+          <h1>Contato</h1>
+          <ul>
+            <li>
+              <img src="./assets/icons/mail.png" alt="Email">
+              <p>Email</p>
+              <p>Biademery@gmail.com</p>
+            </li>
+            <li>
+              <img class="localizacao" src="./assets/icons/pin.png" alt="Localização">
+              <p>Localização</p>
+              <p>João Pessoa - PB, Brasil</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <a href="#">
+          <img class="logo" src="./assets/images/logo.png" alt="Logo">
+        </a>
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/biademery" target="_blank">
+            <img src="./assets/icons/linkedinLight.png" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/Biademery" target="_blank">
+            <img src="./assets/icons/githubLight.png" alt="Github" />
+          </a>
+        </div>
+        <p id="date"></p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

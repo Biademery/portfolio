@@ -1,24 +1,7 @@
-<h1 align="center"> Portfólio</h1>
+# Vue 3 + Vite
 
-<p align="center">
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;
-</p>
+This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-<br>
+## Recommended IDE Setup
 
-<p align="center">
-  <a href="https://portfolio-biademery.vercel.app/"></a>
-</p>
-
-## 💻 Projeto
-
-O projeto é um site com minhas habilidades, formação e currículo. Um portfólio.
-
-## 🚀 Tecnologias
-
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-- HTML
-- CSS
-- JavaScript
+- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
