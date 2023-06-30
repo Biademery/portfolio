@@ -7,7 +7,7 @@
 
 <br>
 
-<img src="./assets/image/portfolio.png">
+<img src="./assets/images/portfolio.png">
 
 <p align="center">
   <a href="https://portfolio-biademery.vercel.app/"></a>
