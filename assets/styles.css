@@ -14,7 +14,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #836d58; 
+  background: #1a110ecc;
 }
 
 body {
@@ -28,6 +28,10 @@ a {
   color: #d6d6d6;
 }
 
+h1 {
+  font-size: 40px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -35,43 +39,19 @@ a {
   background-color: #1a110e;
   position: fixed;
   width: 100%;
-  transition: .15s ease-in;
 }
 
 .logo {
   width: 18%;
 }
 
-.hamburger {
-  padding-right: 1.5%;
-  cursor: pointer;
+.nav-link a {
+  padding: 30px;
+  transition: ease-in-out 0.25s;
 }
 
-.hamburger .line {
-  display: block;
-  width: 30px;
-  height: 3px;
-  margin-bottom: 6px;
-  background-color: #d6d6d6;
-}
-
-.nav__link {
-  display: none;
-  position: fixed;
-  width: 100%;
-  background-color: #1a110e;
-}
-
-.nav__link a {
-  display: block;
-  text-align: center;
-  background-color: #1a110e;
-  color: #d6d6d6;
-  padding: 1% 0;
-}
-
-.nav__link a:hover {
-  color: #836d58;
+.nav-link a:hover {
+  opacity: 0.8;
 }
 
 #myBtn {
@@ -83,7 +63,7 @@ a {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #836d58;
+  background-color: #1a110e;
   cursor: pointer;
   padding: 8px 10px;
   border-radius: 50%;
@@ -121,12 +101,11 @@ a {
   margin-top: 20px;
   font-weight: 500;
   font-size: 20px;
-
+  transition: ease-in-out 0.25s;
 }
 
 .button:hover {
-  background-color: #836d58;
-  color: #1a110e;
+  opacity: 0.8;
   cursor: pointer;
 }
 
@@ -150,33 +129,28 @@ a {
   padding-top: 120px;
 }
 
-.sobre h1,
-#contato h1 {
-  font-size: 40px;
-}
-
 .sobre.p {
   margin-bottom: 20px;
 }
 
-.formacao.curso {
+#course {
   font-weight: bold;
 }
 
-.formacao.data {
+#time {
   font-weight: lighter;
   font-size: 12px;
 }
 
-.skill {
+.skills {
   margin: 20px 0;
 }
 
-.skill div {
+.skills div {
   height: 30px;
 }
 
-.skill ul {
+.skills ul {
   margin-top: 10px;
   list-style-type: none;
   width: auto;
@@ -186,7 +160,7 @@ a {
   justify-content: space-around;
 }
 
-.skill li {
+.skills li {
   height: fit-content;
   font-size: 15px;
   border: 2px solid #1a110e;
@@ -196,7 +170,7 @@ a {
   cursor: default;
 }
 
-.skill li:hover {
+.skills li:hover {
   font-size: 20px;
 }
 
@@ -206,23 +180,23 @@ a {
   gap: 20px;
 }
 
-.projetos p {
-  padding: 20px 0;
+.projects {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
 }
 
-.projetos img {
-  width: 100%;
-  border-radius: 5px;
+.item-link {
+  background-color: #1a110e;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  transition: ease-in-out 0.25s;
 }
 
-.projetos img:hover {
-  opacity: 0.9;
-}
-
-.projetos h3 {
-  font-size: 25px;
-  text-align: center;
-  padding: 10px 0;
+.item-link:hover {
+  opacity: 0.8;
 }
 
 #contato h1 {
